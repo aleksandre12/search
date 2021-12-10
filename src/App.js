@@ -1,5 +1,5 @@
 import './App.css';
-import TvMazeApi from './components/apis/tvmazeApi';
+import TvMazeApi from './components/tvmazeApi';
 
 function App() {
   return (
