@@ -12,17 +12,19 @@ export default function ListItems(props) {
             alt="green iguana"
           />
         </Box>
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {props.name} 
-          </Typography>
-          <Typography>Rating: {props.rating}</Typography>
-          <Typography
-            variant="body2"
-            style={{ wordWrap: "break-word" }}
-            dangerouslySetInnerHTML={{__html: props.description}}
-          />
-        </CardContent>
+        <Box height={'30vh'}>
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              {props.name} 
+            </Typography>
+            <Typography>Rating: {props.rating}</Typography>
+            <Typography
+              variant="body2"
+              style={{ wordWrap: "break-word" }}
+              dangerouslySetInnerHTML={{__html: props.description}}
+            />
+          </CardContent>
+        </Box>
     </Card>
   );
 }
